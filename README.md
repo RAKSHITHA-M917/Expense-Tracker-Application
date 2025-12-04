@@ -3,21 +3,28 @@ Expense Tracker Application
     A simple Python Flask web application to track daily expenses, set monthly budgets, and monitor spending.
     
 Features
+
     Add daily expenses with   amount, category, note, and date .
     Set monthly budgets for each category.
+    
 Alerts:
+
     If total spent exceeds budget.
     View monthly report:
     Total spending per month.
     Summary of spending vs budget per category.
     Fully functional with Docker.
+    
 Tech Stack
+
     Python 3.11
     Flask
     SQLite (lightweight database)
     HTML/CSS for frontend
     Docker (optional)
+    
 Project Structure
+
     EXPENSE_TRACKER
     > pycache_
     static
@@ -41,7 +48,9 @@ Project Structure
     models.py
     requirements.txt
     routes.py
+    
 Setup & Run Locally
+
     1.Fork the repository
         git clone <your-repo-url>
         cd expense-tracker
@@ -54,14 +63,18 @@ Setup & Run Locally
         python app.py
     5. Open your browser and go to:
         http://localhost:5000
+        
 Docker Commands
+
     1.Build Docker image
         docker build -t expense-tracker.
     2.Run the container
         docker run -p 5000:5000 expense-tracker
     3.Open your browser:
         http://localhost:5000
+        
 Test/Validation Steps
+
     1. Add Expense
         1. Go to   Add Expense   page.
         2. Type:
@@ -120,10 +133,14 @@ Test/Validation Steps
         Date format should be in the form YYYY-MM-DD.
         Deleting expenses is   irreversible .
         Budget alerts work   per category per month
-SQL / ORM
+        
+SQL 
+
     SQLite queries are used for:
     Add ,Set ,
     Fetch total and monthly summaries.
     `ON CONFLICT` clause handles budget updates.
+    
 Conclusion
+
     Fully functional   expense tracker Monthly report   and   budget alerts SQL query Implementation Docker support
