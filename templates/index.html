@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+
+    <section class="card">
+      <h2>Add Expense</h2>
+      <form id="expenseForm">
+        <input type="text" id="title" placeholder="Title (e.g., Lunch)" required/>
+        <input type="text" id="category" placeholder="Category (Food/Travel)" required/>
+        <input type="number" id="amount" placeholder="Amount" step="0.01" required/>
+        <input type="date" id="date"/>
+        <input type="number" id="split_count" placeholder="Split count (optional)"/>
+        <input type="text" id="note" placeholder="Note (optional)"/>
+        <button type="submit">Add</button>
+      </form>
+      <div id="expenseAlert" class="alert"></div>
+    </section>
+
+    <section class="card">
+      <h2>Set Budget</h2>
+      <form id="budgetForm">
+        <input type="text" id="budgetCategory" placeholder="Category" required/>
+        <input type="month" id="budgetMonth" required/>
+        <input type="number" id="budgetAmount" placeholder="Amount" step="0.01" required/>
+        <button type="submit">Set Budget</button>
+      </form>
+      <div id="budgetMsg" class="msg"></div>
+    </section>
+
+    <section class="card">
+      <h2>Reports</h2>
+      <input type="month" id="reportMonth"/>
+      <button id="runReport">Get Report</button>
+      <pre id="reportResult"></pre>
+    </section>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

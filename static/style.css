@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; background:#f5f7fb; margin:0; padding:20px; }
+.container{ max-width:900px; margin:0 auto; }
+.card{ background:#fff; border-radius:8px; padding:16px; margin:12px 0; box-shadow:0 2px 6px rgba(0,0,0,0.05);}
+input, button{ padding:8px; margin:6px 4px; }
+button{ cursor:pointer; }
+.alert{ color: #b00020; margin-top:8px; }
+.msg{ color:#006600; margin-top:8px; }
+pre{ background:#f0f0f0; padding:12px; border-radius:6px; }
