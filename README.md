@@ -1,5 +1,7 @@
 Expense Tracker Application
+
     A simple Python Flask web application to track daily expenses, set monthly budgets, and monitor spending.
+    
 Features
     Add daily expenses with   amount, category, note, and date .
     Set monthly budgets for each category.
